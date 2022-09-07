@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>ביקאה</title>
+  </head>
+
+  <body dir="rtl">
+    <!-- navbar- תפריט -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <!-- links-לינקים לתפריט -->
+        <div>
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul class="nav-links">
+            <li>
+              <a href="index.html" class="nav-link"> בית </a>
+            </li>
+            <li>
+              <a href="products.html" class="nav-link"> מוצרים </a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link"> מידע על הרשת </a>
+            </li>
+          </ul>
+        </div>
+        <!-- logo -->
+        <!-- <img src="./images/logo-white.png" class="nav-logo" alt="logo" width="20%" /> -->
+        <!-- אייקון עגלת קניות -->
+        <div class="toggle-container">
+          <button class="toggle-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <span class="cart-item-count">1</span>
+        </div>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="text-slanted">רהיטים</h1>
+        <h3>תבחן את האיכות שאתה רוצה</h3>
+        <a href="products.html" class="hero-btn"> גלה עוד </a>
+      </div>
+    </section>
+    <!-- sidebar-תפריט צד   -->
+    <div class="sidebar-overlay">
+      <!--כפתור תפריט-->
+      <aside class="sidebar">
+        <!-- close -->
+        <button class="sidebar-close">
+          <!--כפתור סגירה-->
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- links-לינקים בתפריט צד -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html" class="sidebar-link">
+              <i class="fas fa-home fa-fw"></i>
+              <!--אייקון-->
+              בית
+            </a>
+          </li>
+          <li>
+            <a href="products.html" class="sidebar-link">
+              <i class="fas fa-couch fa-fw"></i>
+              מוצרים
+            </a>
+          </li>
+          <li>
+            <a href="about.html" class="sidebar-link">
+              <i class="fas fa-book fa-fw"></i>
+              מידע על הרשת
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <!-- cart-עגלת קניות -->
+    <div class="cart-overlay">
+      <aside class="cart">
+        <button class="cart-close">
+          <i class="fas fa-times"></i>
+        </button>
+        <header>
+          <h3 class="text-slanted">רשימת מוצרים</h3>
+        </header>
+        <!-- cart items -->
+        <div class="cart-items"></div>
+        <!-- footer -->
+        <footer>
+          <h3 class="cart-total text-slanted">סה"כ : $12.99</h3>
+          <button class="cart-checkout btn">קנייה</button>
+        </footer>
+      </aside>
+    </div>
+    <!-- featured products-מוצרים בעמוד  -->
+    <section class="section featured">
+      <div class="title">
+        <h2><span>/</span> מוצרים</h2>
+      </div>
+      <div class="featured-center section-center">
+        <h2 class="section-loading">טוען...</h2>
+        <!-- single product-עמוד מוצר -->
+        <!-- <article class="product">
+          <div class="product-container">
+            <img src="./images/main-bcg.jpeg" class="product-img img" alt="" />
+           
+            <div class="product-icons">
+              <a href="product.html?id=1" class="product-icon">
+                <i class="fas fa-search"></i>   
+              </a>
+              <button class="product-cart-btn product-icon" data-id="1">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+          <footer>
+            <p class="product-name">name</p>
+            <h4 class="product-price">$9.99</h4>
+          </footer>
+        </article> -->
+        <!-- end of single product -->
+      </div>
+      <a href="products.html" class="btn"> כל המוצרים </a>
+    </section>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
